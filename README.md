@@ -1,3 +1,6 @@
+YOU NEED TO DO THIS FROM YOUR COMPUTER.
+
+
 # 📅 Canvas to Calendar Bot (Smart Edition)
 
 This tool automatically pulls your Assignments, Announcements, and Events from Canvas and syncs them to your Google/Apple Calendar. 
