@@ -1,72 +1,65 @@
-YOU NEED TO DO THIS FROM YOUR COMPUTER.
-
-
 # 📅 Canvas to Calendar Bot (Smart Edition)
 
-This tool automatically pulls your Assignments, Announcements, and Events from Canvas and syncs them to your Google/Apple Calendar. 
+This tool automatically pulls your **Assignments**, **Announcements**, and **Events** from Canvas and syncs them to your Google/Apple Calendar.
 
-**✨ New Features:**
-* **Auto-Sync:** Updates every day at 5:00 AM.
-* **Smart Parsing:** If a professor posts "Quiz on the 28th" in an announcement, this bot moves it to the correct date automatically.
-* **"Next Class" Logic:** If an announcement says "Quiz next class," the bot checks your personal timetable and figures out the exact date.
+### ✨ Smart Features
+* **Auto-Sync:** Runs automatically every day to keep your schedule fresh.
+* **The "Bouncer" Filter:** Intelligent logic that reads announcement titles (e.g., "Quiz for Section L1") and **only adds it** if it matches *your* specific section.
+* **Smart Date Parsing:** If a professor writes "Quiz next class" or "Midterm on Jan 29th" in an announcement, this bot calculates the exact date and adds it to your calendar.
+* **"All Sections" Support:** Handles courses where one announcement applies to everyone (like Math or General Science).
 
-## 🚀 How to set this up for yourself
+---
+
+## 🚀 How to Set This Up
 
 ### Step 1: Get the Code
-1. Click the **Fork** button (top right of this page) to copy this repository to your own account.
+1. Click the **Fork** button (top right of this page) to copy this repository to your own GitHub account.
 
 ### Step 2: Get Your Canvas Key
-1. Log in to Canvas.
-2. Go to **Account** → **Settings**.
+1. Log in to your school's Canvas website.
+2. Go to **Account** $\rightarrow$ **Settings**.
 3. Scroll down to **Approved Integrations** and click **+ New Access Token**.
-4. Name it "Calendar" and copy the long code it gives you. (DO NOT FORGET THIS TOKEN)
-5. this token is only available for four months so add a date four months in advance
+4. Name it "Calendar Bot" and set an expiration date (e.g., 6 months).
+5. **Copy the long token immediately** (you won't see it again).
 
-
-### Step 3: Add Your Secrets (The Important Part)
+### Step 3: Configure Your Secrets (Crucial Step)
 1. Go to your new repository's **Settings** tab.
-2. Click **Secrets and variables** → **Actions** → **New repository secret**.
-3. You need to add these **3 Secrets**:
+2. On the left sidebar, click **Secrets and variables** $\rightarrow$ **Actions**.
+3. Click **New repository secret** and add these 3 secrets:
 
-| Name | Value |
+| Secret Name | Value |
 | :--- | :--- |
 | `CANVAS_API_KEY` | Paste the long token you just copied. |
-| `CANVAS_API_URL` | Paste our school's Canvas URL (e.g., `https://canvas.instructure.com`). *Must start with https://* |
-| `MY_TIMETABLE` | (Optional) Your class schedule. See the code block below. |
+| `CANVAS_API_URL` | Your school's Canvas URL (e.g., `https://canvas.instructure.com`). *Must start with https://* |
+| `MY_TIMETABLE` | Your specific class schedule configuration. **See the JSON guide below.** |
 
-PLEASE KEEP THE NAMING CONVENTION THE SAME
+#### 📝 How to Format `MY_TIMETABLE`
+This is how the bot knows which sections you are in. Copy the code below, paste it into a text editor, and update it for your classes.
 
-#### 📝 How to format `MY_TIMETABLE`
-Copy the code below and change the days to match your schedule.
-* **0** = Monday, **1** = Tuesday, **2** = Wednesday, **3** = Thursday, **4** = Friday, **5** = Saturday
-* **Format:** `"Course Code": [Day numbers]`
+* **Course Name:** Must match the name in Canvas (e.g. if Canvas says `CS/CE 412`, use `"CS/CE 412"`).
+* **days:** 0=Monday, 1=Tuesday, 2=Wednesday, 3=Thursday, 4=Friday, 5=Saturday.
+* **sections:** Put your section name here (e.g., "L1", "S2").
+    * *Tip:* If you leave sections empty `[]`, the bot will accept **ALL** announcements for that course (good for general courses like Math).
 
 ```json
 {
-  "CS 363": [1, 3],
-  "MATH 205": [0, 2, 4],
-  "CS 101": [0, 2]
+  "courses": {
+    "CS 101": {
+      "days": [0, 2],
+      "sections": ["L1"]
+    },
+    "MATH 205": {
+      "days": [1, 3],
+      "sections": []
+    },
+    "CS/CE 412": {
+      "days": [0, 4],
+      "sections": ["L4"]
+    }
+  }
 }
+
 ```
-Step 4: Turn on the Robot
-Go to the Actions tab.
-
-Click Daily Calendar Sync on the left.
-
-Click Enable Workflow (if asked).
-
-Click Run workflow to start it for the first time.
-
-Step 5: Get Your Link
-Once the run turns Green ✅, go to Settings → Pages.
-
-Under Branch, select main and click Save.
-
-Your calendar link will appear at the top!
-
-It will look like: https://(your-username).github.io/canvas-calendar/my_schedule.ics
-
-Step 6: Add to Phone
-iPhone: Settings → Apps → Calendar → Calendar Accounts → Add Account → Other → Add Subscribed Calendar.
-
-Google: Calendar Website → "+" next to Other Calendars → From URL.
+(Note: In the example above, MATH 205 has empty sections [], so the bot will grab every announcement for Math. CS 101 has ["L1"], so it will ignore announcements meant for L2 or L3.)
+Step 4: Turn on the RobotGo to the Actions tab at the top of your repo.Click Daily Calendar Sync on the left.Click Enable Workflow (if asked).Click Run workflow $\rightarrow$ Run workflow to start it for the first time.
+Step 5: Get Your LinkOnce the run turns Green ✅, go to Settings $\rightarrow$ Pages.Under Branch, ensure it is set to main (or gh-pages if created) and click Save.Your calendar link will appear at the top in a minute or two!It looks like: https://(your-username).github.io/canvas-calendar/my_schedule.ics
