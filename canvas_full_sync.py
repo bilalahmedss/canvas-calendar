@@ -21,7 +21,7 @@ COURSE_CONFIGS = CONFIG.get("courses", {})
 LOCAL_TZ = pytz.timezone("Asia/Karachi")
 
 def get_course_config(course_code, course_name):
-    # This checks both the ID (like CS 492) and the long name (like Visual Programming)
+    # Combines code and name to ensure we find a match in your JSON
     combined_name = (str(course_code) + " " + str(course_name)).replace(" ", "").upper()
     for key, data in COURSE_CONFIGS.items():
         clean_key = key.replace(" ", "").upper()
@@ -40,43 +40,38 @@ def is_relevant_announcement(title, message, my_sections):
 def main():
     API_URL = os.environ.get("CANVAS_API_URL")
     API_KEY = os.environ.get("CANVAS_API_KEY")
-    print("🔄 Syncing Canvas Data...")
-    courses = canvas.get_courses(enrollment_state='active')
-    
-    found_any_course = False
-    for course in courses:
-        found_any_course = True
-        # NEW: This prints every course the robot finds to the GitHub Log
-        print(f"📂 Found on Canvas: {course.course_code} - {course.name}")
-        
-        config_data = get_course_config(course.course_code, course.name)
-        if not config_data:
-            print(f"⚠️ Skipping: No match in MY_TIMETABLE for {course.course_code}")
-            continue
     
     if not API_URL or not API_KEY:
         print("❌ Error: Missing CANVAS_API_URL or CANVAS_API_KEY")
         return
 
+    # --- INITIALIZE CANVAS FIRST ---
     canvas = Canvas(API_URL, API_KEY)
     cal = Calendar()
     start_date = (datetime.now(LOCAL_TZ) - timedelta(days=30)).strftime("%Y-%m-%d")
     
-    # 1. Sync Canvas Data (Assignments & Announcements)
+    # 1. Sync Canvas Data
     print("🔄 Syncing Canvas Data...")
     try:
         courses = canvas.get_courses(enrollment_state='active')
         for course in courses:
-            config_data = get_course_config(course.course_code)
-            class_days = config_data['days'] if config_data else []
-            my_sections = config_data['sections'] if config_data else []
+            # Logs what the robot finds so you can see it in GitHub Actions
+            print(f"📂 Found on Canvas: {course.course_code} - {getattr(course, 'name', 'Unknown')}")
+            
+            config_data = get_course_config(course.course_code, getattr(course, 'name', ''))
+            if not config_data:
+                print(f"⚠️ Skipping: No match in MY_TIMETABLE for {course.course_code}")
+                continue
+
+            class_days = config_data.get('days', [])
+            my_sections = config_data.get('sections', [])
             
             # Assignments
             for assign in course.get_assignments():
                 if assign.due_at and assign.due_at > start_date:
                     e = Event()
                     e.name = f"📝 {assign.name} ({course.course_code})"
-                    e.begin = assign.due_at # Canvas times are UTC; ics handles them
+                    e.begin = assign.due_at
                     e.description = assign.html_url
                     cal.events.add(e)
             
@@ -87,14 +82,13 @@ def main():
                         continue 
                     e = Event()
                     e.name = f"📢 {ann.title} ({course.course_code})"
-                    # Simple date for announcements
                     e.begin = datetime.strptime(ann.posted_at[:10], "%Y-%m-%d")
                     e.make_all_day()
                     cal.events.add(e)
     except Exception as e:
         print(f"⚠️ Canvas Sync Error: {e}")
 
-    # 2. Injecting Class Timings (Fixed Karachi Time)
+    # 2. Injecting Class Timings (Karachi Time)
     print("📅 Injecting Class Timings (Asia/Karachi)...")
     for course_name, data in COURSE_CONFIGS.items():
         if 'times' in data and 'days' in data:
@@ -124,8 +118,7 @@ def main():
 
     with open('my_schedule.ics', 'w', encoding='utf-8') as f:
         f.writelines(cal)
-    print("✅ Success! Complete calendar generated.")
+    print("✅ Success! Full calendar generated.")
 
 if __name__ == "__main__":
     main()
-
