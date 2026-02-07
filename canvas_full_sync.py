@@ -22,10 +22,10 @@ LOCAL_TZ = pytz.timezone("Asia/Karachi")
 
 def get_course_config(course_code, course_name):
     # Combines code and name to ensure we find a match in your JSON
-    combined_name = (str(course_code) + " " + str(course_name)).replace(" ", "").upper()
+    combined_full = (str(course_code) + " " + str(course_name)).replace(" ", "").upper()
     for key, data in COURSE_CONFIGS.items():
         clean_key = key.replace(" ", "").upper()
-        if clean_key in combined_name:
+        if clean_key in combined_full:
             return data
     return None
 
@@ -45,7 +45,6 @@ def main():
         print("❌ Error: Missing CANVAS_API_URL or CANVAS_API_KEY")
         return
 
-    # --- INITIALIZE CANVAS FIRST ---
     canvas = Canvas(API_URL, API_KEY)
     cal = Calendar()
     start_date = (datetime.now(LOCAL_TZ) - timedelta(days=30)).strftime("%Y-%m-%d")
@@ -55,14 +54,14 @@ def main():
     try:
         courses = canvas.get_courses(enrollment_state='active')
         for course in courses:
-            # Logs what the robot finds so you can see it in GitHub Actions
-            print(f"📂 Found on Canvas: {course.course_code} - {getattr(course, 'name', 'Unknown')}")
-            
+            # STRICT FILTER: Check if course is in MY_TIMETABLE
             config_data = get_course_config(course.course_code, getattr(course, 'name', ''))
+            
             if not config_data:
-                print(f"⚠️ Skipping: No match in MY_TIMETABLE for {course.course_code}")
+                # This ensures we ONLY sync what you explicitly listed
                 continue
 
+            print(f"✅ Syncing: {course.course_code}")
             class_days = config_data.get('days', [])
             my_sections = config_data.get('sections', [])
             
@@ -72,7 +71,7 @@ def main():
                     e = Event()
                     e.name = f"📝 {assign.name} ({course.course_code})"
                     e.begin = assign.due_at
-                    e.description = assign.html_url
+                    e.description = f"Link: {assign.html_url}"
                     cal.events.add(e)
             
             # Announcements
@@ -80,10 +79,16 @@ def main():
                 if ann.posted_at and ann.posted_at > start_date:
                     if my_sections and not is_relevant_announcement(ann.title, ann.message, my_sections):
                         continue 
+                    
                     e = Event()
                     e.name = f"📢 {ann.title} ({course.course_code})"
                     e.begin = datetime.strptime(ann.posted_at[:10], "%Y-%m-%d")
                     e.make_all_day()
+                    
+                    # UNTRIMMED DESCRIPTION: No character limit
+                    clean_msg = re.sub(r'<[^>]+>', '', ann.message) # Removes HTML tags
+                    e.description = f"Link: {ann.html_url}\n\n{clean_msg}"
+                    
                     cal.events.add(e)
     except Exception as e:
         print(f"⚠️ Canvas Sync Error: {e}")
@@ -118,7 +123,7 @@ def main():
 
     with open('my_schedule.ics', 'w', encoding='utf-8') as f:
         f.writelines(cal)
-    print("✅ Success! Full calendar generated.")
+    print("✅ Success! Full untrimmed calendar generated.")
 
 if __name__ == "__main__":
     main()
