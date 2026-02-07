@@ -5,7 +5,7 @@ from canvasapi import Canvas
 from ics import Calendar, Event
 from ics.grammar.parse import ContentLine  # Critical for the fix
 from datetime import datetime, timedelta
-
+import pytz
 # --- LOAD CONFIGURATION ---
 def load_config():
     timetable_str = os.environ.get("MY_TIMETABLE", "{}")
@@ -121,4 +121,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
