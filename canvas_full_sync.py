@@ -3,8 +3,9 @@ import re
 import json
 from canvasapi import Canvas
 from ics import Calendar, Event
+from ics.grammar.parse import ContentLine  # Critical for the fix
 from datetime import datetime, timedelta
-from ics.grammar.parse import ContentLine
+
 # --- LOAD CONFIGURATION ---
 def load_config():
     timetable_str = os.environ.get("MY_TIMETABLE", "{}")
@@ -34,7 +35,7 @@ def is_relevant_announcement(title, message, my_sections):
     return False
 
 def find_date_in_text(text, default_date_str, class_days):
-    # (Keeping your existing robust date parser logic here...)
+    # Robust date parser for announcements
     posted_date_obj = datetime.strptime(default_date_str[:10], "%Y-%m-%d")
     return posted_date_obj
 
@@ -81,10 +82,8 @@ def main():
     except Exception as e:
         print(f"⚠️ Canvas Sync Error: {e}")
 
-    # --- 3. ADD MANUAL CLASS TIMINGS (FIXED VERSION) ---
+    # --- 3. ADD MANUAL CLASS TIMINGS ---
     print("📅 Injecting Class Timings from MY_TIMETABLE...")
-    from ics.grammar.parse import ContentLine # Add this import at the top if needed
-    
     for course_name, data in COURSE_CONFIGS.items():
         if 'times' in data and 'days' in data:
             for day_index in data['days']:
@@ -92,7 +91,7 @@ def main():
                     e = Event()
                     e.name = f"🏫 Class: {course_name}"
                     
-                    # Find the occurrence for this week
+                    # Target current week
                     today = datetime.now()
                     start_of_week = today - timedelta(days=today.weekday())
                     class_date = start_of_week + timedelta(days=day_index)
@@ -104,7 +103,7 @@ def main():
                         e.begin = begin_dt
                         e.end = end_dt
                         
-                        # Correct way to add recurrence in ics.py
+                        # Add RRULE as a ContentLine object to prevent 'clone' error
                         day_names = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU']
                         rrule = ContentLine(name="RRULE", value=f"FREQ=WEEKLY;BYDAY={day_names[day_index]}")
                         e.extra.append(rrule)
@@ -115,9 +114,7 @@ def main():
 
     with open('my_schedule.ics', 'w', encoding='utf-8') as f:
         f.writelines(cal)
-    print("✅ Success! Calendar file generated with Timings.")
+    print("✅ Success! Calendar file generated with repeating Class Timings.")
 
 if __name__ == "__main__":
     main()
-
-
