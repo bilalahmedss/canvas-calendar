@@ -82,8 +82,11 @@ def main():
     except Exception as e:
         print(f"⚠️ Canvas Sync Error: {e}")
 
-    # --- 3. ADD MANUAL CLASS TIMINGS ---
+    # --- 3. ADD MANUAL CLASS TIMINGS (TIMEZONE FIXED) ---
     print("📅 Injecting Class Timings from MY_TIMETABLE...")
+    import pytz # You might need to add 'pytz' to requirements.txt
+    local_tz = pytz.timezone("Asia/Karachi")
+
     for course_name, data in COURSE_CONFIGS.items():
         if 'times' in data and 'days' in data:
             for day_index in data['days']:
@@ -91,19 +94,19 @@ def main():
                     e = Event()
                     e.name = f"🏫 Class: {course_name}"
                     
-                    # Target current week
-                    today = datetime.now()
+                    today = datetime.now(local_tz)
                     start_of_week = today - timedelta(days=today.weekday())
                     class_date = start_of_week + timedelta(days=day_index)
                     
                     try:
-                        begin_dt = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {start_t}", "%Y-%m-%d %H:%M")
-                        end_dt = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {end_t}", "%Y-%m-%d %H:%M")
+                        # Create "naive" time first
+                        begin_naive = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {start_t}", "%Y-%m-%d %H:%M")
+                        end_naive = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {end_t}", "%Y-%m-%d %H:%M")
                         
-                        e.begin = begin_dt
-                        e.end = end_dt
+                        # Localize to Pakistan Time
+                        e.begin = local_tz.localize(begin_naive)
+                        e.end = local_tz.localize(end_naive)
                         
-                        # Add RRULE as a ContentLine object to prevent 'clone' error
                         day_names = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU']
                         rrule = ContentLine(name="RRULE", value=f"FREQ=WEEKLY;BYDAY={day_names[day_index]}")
                         e.extra.append(rrule)
@@ -118,3 +121,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
