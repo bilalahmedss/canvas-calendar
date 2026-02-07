@@ -4,7 +4,7 @@ import json
 from canvasapi import Canvas
 from ics import Calendar, Event
 from datetime import datetime, timedelta
-
+from ics.grammar.parse import ContentLine
 # --- LOAD CONFIGURATION ---
 def load_config():
     timetable_str = os.environ.get("MY_TIMETABLE", "{}")
@@ -119,4 +119,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
