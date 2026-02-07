@@ -20,11 +20,12 @@ CONFIG = load_config()
 COURSE_CONFIGS = CONFIG.get("courses", {})
 LOCAL_TZ = pytz.timezone("Asia/Karachi")
 
-def get_course_config(course_code):
-    clean_code = str(course_code).replace(" ", "").upper()
+def get_course_config(course_code, course_name):
+    # This checks both the ID (like CS 492) and the long name (like Visual Programming)
+    combined_name = (str(course_code) + " " + str(course_name)).replace(" ", "").upper()
     for key, data in COURSE_CONFIGS.items():
         clean_key = key.replace(" ", "").upper()
-        if clean_key in clean_code or clean_code in clean_key:
+        if clean_key in combined_name:
             return data
     return None
 
@@ -39,6 +40,19 @@ def is_relevant_announcement(title, message, my_sections):
 def main():
     API_URL = os.environ.get("CANVAS_API_URL")
     API_KEY = os.environ.get("CANVAS_API_KEY")
+    print("🔄 Syncing Canvas Data...")
+    courses = canvas.get_courses(enrollment_state='active')
+    
+    found_any_course = False
+    for course in courses:
+        found_any_course = True
+        # NEW: This prints every course the robot finds to the GitHub Log
+        print(f"📂 Found on Canvas: {course.course_code} - {course.name}")
+        
+        config_data = get_course_config(course.course_code, course.name)
+        if not config_data:
+            print(f"⚠️ Skipping: No match in MY_TIMETABLE for {course.course_code}")
+            continue
     
     if not API_URL or not API_KEY:
         print("❌ Error: Missing CANVAS_API_URL or CANVAS_API_KEY")
@@ -114,3 +128,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
