@@ -161,8 +161,33 @@ def main():
 
     with open('my_schedule.ics', 'w', encoding='utf-8') as f:
         f.writelines(cal)
+    # 3. Add Manual Class Timings from MY_TIMETABLE
+    print("📅 Adding Class Timings...")
+    for course_name, data in COURSE_CONFIGS.items():
+        if 'times' in data and 'days' in data:
+            for day_index in data['days']:
+                for start_time, end_time in data['times']:
+                    # This creates a recurring weekly event for your class
+                    e = Event()
+                    e.name = f"🏫 Class: {course_name}"
+                    
+                    # Logic to find the first occurrence of this weekday
+                    today = datetime.now()
+                    days_ahead = (day_index - today.weekday() + 7) % 7
+                    class_date = today + timedelta(days=days_ahead)
+                    
+                    # Set the start and end times
+                    start_dt = datetime.strptime(f"{class_date.date()} {start_time}", "%Y-%m-%d %H:%M")
+                    end_dt = datetime.strptime(f"{class_date.date()} {end_time}", "%Y-%m-%d %H:%M")
+                    
+                    e.begin = start_dt
+                    e.end = end_dt
+                    # Optional: Add weekly recurrence
+                    e.extra.append(f"RRULE:FREQ=WEEKLY;BYDAY={['MO','TU','WE','TH','FR','SA','SU'][day_index]}")
+                    cal.events.add(e)
     
     print("✅ Success! Calendar updated.")
 
 if __name__ == "__main__":
     main()
+
