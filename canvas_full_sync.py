@@ -13,6 +13,7 @@ def load_config():
     try:
         return json.loads(timetable_str)
     except json.JSONDecodeError:
+        print("⚠️ Warning: MY_TIMETABLE secret is not valid JSON")
         return {}
 
 CONFIG = load_config()
@@ -27,28 +28,59 @@ def get_course_config(course_code):
             return data
     return None
 
+def is_relevant_announcement(title, message, my_sections):
+    text = (title + " " + message).upper()
+    mentioned_sections = set(re.findall(r"\b[LSR]\d+\b", text))
+    if not mentioned_sections: return True 
+    for sec in my_sections:
+        if sec.upper() in mentioned_sections: return True
+    return False
+
 def main():
     API_URL = os.environ.get("CANVAS_API_URL")
     API_KEY = os.environ.get("CANVAS_API_KEY")
     
     if not API_URL or not API_KEY:
-        print("❌ Error: Missing Canvas Credentials")
+        print("❌ Error: Missing CANVAS_API_URL or CANVAS_API_KEY")
         return
 
     canvas = Canvas(API_URL, API_KEY)
     cal = Calendar()
+    start_date = (datetime.now(LOCAL_TZ) - timedelta(days=30)).strftime("%Y-%m-%d")
     
-    # 1. Sync Canvas Data (Assignments/Announcements)
+    # 1. Sync Canvas Data (Assignments & Announcements)
     print("🔄 Syncing Canvas Data...")
     try:
         courses = canvas.get_courses(enrollment_state='active')
         for course in courses:
-            # (Existing assignment/announcement logic stays here)
-            pass
+            config_data = get_course_config(course.course_code)
+            class_days = config_data['days'] if config_data else []
+            my_sections = config_data['sections'] if config_data else []
+            
+            # Assignments
+            for assign in course.get_assignments():
+                if assign.due_at and assign.due_at > start_date:
+                    e = Event()
+                    e.name = f"📝 {assign.name} ({course.course_code})"
+                    e.begin = assign.due_at # Canvas times are UTC; ics handles them
+                    e.description = assign.html_url
+                    cal.events.add(e)
+            
+            # Announcements
+            for ann in course.get_discussion_topics(only_announcements=True):
+                if ann.posted_at and ann.posted_at > start_date:
+                    if my_sections and not is_relevant_announcement(ann.title, ann.message, my_sections):
+                        continue 
+                    e = Event()
+                    e.name = f"📢 {ann.title} ({course.course_code})"
+                    # Simple date for announcements
+                    e.begin = datetime.strptime(ann.posted_at[:10], "%Y-%m-%d")
+                    e.make_all_day()
+                    cal.events.add(e)
     except Exception as e:
         print(f"⚠️ Canvas Sync Error: {e}")
 
-    # 2. Injecting Class Timings (Karachi Time Fixed)
+    # 2. Injecting Class Timings (Fixed Karachi Time)
     print("📅 Injecting Class Timings (Asia/Karachi)...")
     for course_name, data in COURSE_CONFIGS.items():
         if 'times' in data and 'days' in data:
@@ -57,21 +89,17 @@ def main():
                     e = Event()
                     e.name = f"🏫 Class: {course_name}"
                     
-                    # Find the correct day in the current week
                     now = datetime.now(LOCAL_TZ)
                     start_of_week = now - timedelta(days=now.weekday())
                     class_date = start_of_week + timedelta(days=day_index)
                     
                     try:
-                        # Combine date with time strings from JSON
                         begin_naive = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {start_t}", "%Y-%m-%d %H:%M")
                         end_naive = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {end_t}", "%Y-%m-%d %H:%M")
                         
-                        # Tell the event this is Karachi time, not UTC
                         e.begin = LOCAL_TZ.localize(begin_naive)
                         e.end = LOCAL_TZ.localize(end_naive)
                         
-                        # Add Weekly Recurrence
                         day_names = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU']
                         rrule = ContentLine(name="RRULE", value=f"FREQ=WEEKLY;BYDAY={day_names[day_index]}")
                         e.extra.append(rrule)
@@ -82,7 +110,7 @@ def main():
 
     with open('my_schedule.ics', 'w', encoding='utf-8') as f:
         f.writelines(cal)
-    print("✅ Success! Timezone-aware calendar generated.")
+    print("✅ Success! Complete calendar generated.")
 
 if __name__ == "__main__":
     main()
