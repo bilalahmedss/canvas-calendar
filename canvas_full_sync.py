@@ -81,8 +81,10 @@ def main():
     except Exception as e:
         print(f"⚠️ Canvas Sync Error: {e}")
 
-    # --- 3. ADD MANUAL CLASS TIMINGS (THE MISSING PIECE) ---
+    # --- 3. ADD MANUAL CLASS TIMINGS (FIXED VERSION) ---
     print("📅 Injecting Class Timings from MY_TIMETABLE...")
+    from ics.grammar.parse import ContentLine # Add this import at the top if needed
+    
     for course_name, data in COURSE_CONFIGS.items():
         if 'times' in data and 'days' in data:
             for day_index in data['days']:
@@ -90,21 +92,23 @@ def main():
                     e = Event()
                     e.name = f"🏫 Class: {course_name}"
                     
-                    # Find the Monday of this week
+                    # Find the occurrence for this week
                     today = datetime.now()
                     start_of_week = today - timedelta(days=today.weekday())
                     class_date = start_of_week + timedelta(days=day_index)
                     
-                    # Combine date with time
                     try:
                         begin_dt = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {start_t}", "%Y-%m-%d %H:%M")
                         end_dt = datetime.strptime(f"{class_date.strftime('%Y-%m-%d')} {end_t}", "%Y-%m-%d %H:%M")
                         
                         e.begin = begin_dt
                         e.end = end_dt
-                        # Add Weekly Recurrence
+                        
+                        # Correct way to add recurrence in ics.py
                         day_names = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU']
-                        e.extra.append(f"RRULE:FREQ=WEEKLY;BYDAY={day_names[day_index]}")
+                        rrule = ContentLine(name="RRULE", value=f"FREQ=WEEKLY;BYDAY={day_names[day_index]}")
+                        e.extra.append(rrule)
+                        
                         cal.events.add(e)
                     except Exception as time_err:
                         print(f"❌ Time format error for {course_name}: {time_err}")
@@ -115,3 +119,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
