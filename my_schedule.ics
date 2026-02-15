@@ -1,0 +1,549 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/63378
+DTSTART:20260213T103000Z
+SUMMARY:📝 Lab 4 pdf (CE/EE 442L/426L-T1)
+UID:235e6d60-54e4-47ce-9fa5-413d0053290d@235e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/63291
+DTSTART:20260208T185959Z
+SUMMARY:📝 A3: LLM Security Helper App (CS 435-L1)
+UID:8196ca41-5e42-4b09-a0f9-5181231a1200@8196.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4852/assignments/63178
+DTSTART:20260207T185900Z
+SUMMARY:📝 HW1 (CE/EE 442/426-L1)
+UID:132e005d-bb5b-48bb-bbbd-b8a1e7cda58b@132e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260126
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/61923\n\nHi All:\nEVENT 1\nThe Google Developer Group (GDGoC) at Habib University is&nbsp\;organizing a session with the leadership team of&nbsp\;Vyro\, the Pakistan-based AI company behind&nbsp\;ImagineArt\, a generative AI tool with massive global traction.\nEvent Details:\nDate:&nbsp\;February 3rd\, 2026 (Week 4)\nTime:&nbsp\;1:00 PM – 2:15 PM\nEVENT 2\n\nBoth of these events are counted as professional visit.\nRegards\,&nbsp\;
+SUMMARY:📢 Possible Professional vist  (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:e878905b-c556-48d1-9650-370f57d5b116@e878.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTEND:20260209T091500Z
+DTSTART:20260209T080000Z
+SUMMARY:🏫 Class: CS/CE 335/466-L2
+UID:ca59a0ba-f895-4e05-adfa-5183f3c8c008@ca59.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260128
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/62030\n\nHello everyone\,At this point in the semester\, you should start working on your projects. The following document contains details regarding the project and its deliverables.
+SUMMARY:📢 Final Project/Research Paper (CS 435-L1)
+UID:fb285213-f616-402c-a535-7d3bb7654c1f@fb28.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/63789
+DTSTART:20260220T103000Z
+SUMMARY:📝 Lab 5 pdf (CE/EE 442L/426L-T1)
+UID:49c482cc-2bc3-4348-a1ae-bbcb9ba2a038@49c4.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260128
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/62037\n\nHi all\,\nThe class activity is a graded component. For those of you who were absent\, please complete this and submit on Canvas by Friday. I will create a Canvas tab for it later today.\nIf there are any confusions\, questions on Piazza are welcome.\nBest\,Usama
+SUMMARY:📢 Class Activity (CS/CE 335/466-L2)
+UID:3524d968-5469-4297-8197-7ccf02609e9c@3524.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=WE
+DTEND:20260211T044500Z
+DTSTART:20260211T033000Z
+SUMMARY:🏫 Class: HS/LT/CM 216-S1
+UID:faa78e14-418c-4fae-b5d2-7ddbb6e75b34@faa7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62133
+DTSTART:20260428T185959Z
+SUMMARY:📝 Final Evalution (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:5593ab7b-ba8a-4124-8fc9-c96b5d581380@5593.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/63293
+DTSTART:20260216T110000Z
+SUMMARY:📝 Elevator pitch  (CS 435-L1)
+UID:7375110f-cde4-4f17-99a2-8b8ffa59c643@7375.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62131
+DTSTART:20260316T185900Z
+SUMMARY:📝 04-Standup Meeting (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:1f4e76b7-74c8-483b-bc48-0c7dc2895b32@1f4e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/62615
+DTSTART:20260123T103000Z
+SUMMARY:📝 Lab 1  (CE/EE 442L/426L-T1)
+UID:dd1ecaf6-df18-4aeb-9f96-e06b014daa25@dd1e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260214
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/discussion_topics/62617\n\n\nSecure Architecture\n\nThreat Modeling\nRisk Management\n\n\nReadings\n\nOWASP Readings&nbsp\; and\nMarkdown Editing\n\n\n
+SUMMARY:📢 Today's Slide are uploaded in Secure Architecture\, Threat Modeling\, Risk Management\, along with Reading section. (CS 382-L1)
+UID:7644af28-2aa1-4e30-966c-4f96a97ab5ec@7644.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5006/assignments/63741
+DTSTART:20260222T185959Z
+SUMMARY:📝 1. Assignment-Mir (HS/LT/CM 216-S1)
+UID:201d3475-49f0-4e8b-bcc6-b65b6fd6b6cb@201d.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260126
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/61942\n\nDear students\,\nQuiz 2 will start at 4:30pm. Please be at W-321 to attempt the quiz.\nBest\,\nCS 435 Team
+SUMMARY:📢 Quiz 2 (CS 435-L1)
+UID:b401a7f8-fb9c-40c8-9cfb-115f978050a2@b401.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/62980
+DTSTART:20260126T120000Z
+SUMMARY:📝 Quiz 2 (CS 435-L1)
+UID:0c2b47b0-9fbc-4cf6-8ebe-5b5002712f14@0c2b.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=TU
+DTEND:20260210T044500Z
+DTSTART:20260210T033000Z
+SUMMARY:🏫 Class: CS 382-L1
+UID:3e30c3b9-d3ba-4b54-a331-3dab61a8cad7@3e30.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5006/assignments/63429
+DTSTART:20260206T045000Z
+SUMMARY:📝 2\, Quiz- MCQs (HS/LT/CM 216-S1)
+UID:31596bb9-105b-4c61-b15e-9e32d51be7a8@3159.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260210
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5006/discussion_topics/62468\n\nPlease watch this week. There will be a test on this film.\nMah e Mir 2016 Full Movie Watch Online Free | Movies123.pk\nhttps://www.facebook.com/reel/972733993704554
+SUMMARY:📢 Links for the film" Mah-e-Mir" (HS/LT/CM 216-S1)
+UID:2c331d3d-d9a2-4cfc-9a1e-6bc51cfb4f94@2c33.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260126
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/61951\n\nDear everyone\,\nHere’s a brief recap of Lecture 3 (the recording can be found in the meeting chat on Teams).\nWe introduced Ethics &amp\; AI as a taxonomy\, including:\n\nthe difference between ethics vs. morals and what Ethical AI means in practice\nkey pillars: fairness (incl. equality vs. equity)\, accountability\, transparency\, privacy\, and bias\nexplainability vs. interpretability\, and why fairness is a socio-technical issue (not just statistics)\nreal-world examples of AI harms/bias and a preview of tools/platforms we’ll use going forward\n\nThe recap quiz will be based on the lecture and notes\, so please prepare by re-watching the lecture recording and reviewing the slides.\nSupplemental material: papers + reference resources\, including Attention Is All You Need\, On the Dangers of Stochastic Parrots\, AIF360\, and additional readings can be found at Readings &amp\; Supplemental Material.\nAssignment 2 has been released and can be found at A2: Ethics of AI MOOC. It is due on Sunday\, 1st Feb at 11:59 PM.&nbsp\;&nbsp\;\nBest\,\nCS 435 Team
+SUMMARY:📢 Lecture 3 Recap\, Quiz & Assignment (CS 435-L1)
+UID:e70bd2f7-d40e-4f85-a068-53acdaf66b5e@e70b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/assignments/62474
+DTSTART:20260129T030000Z
+SUMMARY:📝 Cybersecurity Ethics & Responsible Code of Conduct   (CS 382-L1)
+UID:8798590d-2511-4731-8382-3e9aa0f3b2ed@8798.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260210
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4852/discussion_topics/62478\n\nHi\nI have uploaded HW1 solution to HW Solutions Module on main page
+SUMMARY:📢 HW1 Solution Uploaded (CE/EE 442/426-L1)
+UID:c30e5886-40b9-493b-8037-7d19bb4c72b2@c30e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260126
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/61921\n\nDear Students (C6)\,\nWe shall be following the below schedule for Progress Update:\n\nBest Regards\nAhsan Jawed
+SUMMARY:📢 Progress Update Schedule (C6) (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:6f5e243f-7eb7-455f-93b1-666a7271fa33@6f5e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/assignments/63569
+DTSTART:20260209T091500Z
+SUMMARY:📝 Quiz 1 (CS/CE 335/466-L2)
+UID:5bb64e0e-b876-4ede-9ef0-003cfbec209f@5bb6.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260118
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/61661\n\nDear All\,\nA few updates:\n\nI have uploaded the slides for our first lecture (January 14th). You can find all uploads under the Files section on Canvas. If you find any typos in any of my slides\, do reach out!\nI learnt that some students found the pace of the first lecture a bit fast. I am happy to review the concepts in the next lecture.\nI have decided to use Piazza as a discussion platform for this course. In my opinion\, it provides a richer discussion experience than the one provided by Canvas. You should have received an invitation to set up your Piazza account.\nI’m also working on getting it integrated with Canvas (such that you see a Piazza tab). That being said\, you can always access it directly from piazza.com (just login using your habib.edu.pk email).\n\nBest\,Usama
+SUMMARY:📢 Slides uploaded + Piazza (CS/CE 335/466-L2)
+UID:dc1155c9-3a92-4778-a921-ba57c6ba9104@dc11.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/63505
+DTSTART:20260209T115300Z
+SUMMARY:📝 Quiz 4 (CS 435-L1)
+UID:ba64e165-9127-4144-a4e7-f07036e2eb27@ba64.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/assignments/63718
+DTSTART:20260212T044500Z
+SUMMARY:📝 Networks (CS 382-L1)
+UID:d2db7ab8-1023-4c62-8680-3c24813da630@d2db.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260126
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/discussion_topics/61933\n\nDear Students\,\nCombined Makeup class January 20 and 22\, has been scheduled for February 14\, 2026\, from 10:30 AM to 1:00 PM in E-003 by our Registrar.&nbsp\;
+SUMMARY:📢 Combined Makeup class scheduled on 14 Feb 2025. (CS 382-L1)
+UID:b153ec7e-4282-476e-8a38-f87412a4ffa2@b153.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260116
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/61613\n\nDear Students\,\nThe first quiz of this course will take place on Monday\, 19th January. Please be present in the classroom (W-321) from 4:30pm to 5:00pm for the quiz. You will still have to join the class online at 4:00pm. The quiz will start at 4:30pm sharp and no extra time will be given. The resources for the quiz are accessible here. Please note that the quiz will be on canvas and you will need your laptops to attempt it.&nbsp\;\nRegards\,\nCS435 Team
+SUMMARY:📢 Quiz 1 (CS 435-L1)
+UID:ab18ffb2-463b-4f45-8cf4-e8587e285d67@ab18.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62136
+DTSTART:20260427T185959Z
+SUMMARY:📝 Professional Visit 1 (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:4393ec14-f12c-43f2-83e9-071ca4fe570d@4393.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/62869
+DTSTART:20260130T185959Z
+SUMMARY:📝 Lab 2 pkt files submission (CE/EE 442L/426L-T1)
+UID:5c2a5090-d14a-4dc1-9469-e756040f2e0f@5c2a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/63164
+DTSTART:20260202T120000Z
+SUMMARY:📝 Quiz 3 (CS 435-L1)
+UID:84b04b17-c444-482e-b316-690dc287cb41@84b0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62129
+DTSTART:20260223T185959Z
+SUMMARY:📝 Mid Semester Evaluation (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:b74f4cf6-f4ae-4ae6-9253-2e5628d387fc@b74f.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260210
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/62459\n\nDear Students\,\nThis is to remind and encourage you to attend today's public lecture 'After the Algorithm' by Bakhtiar Hameed Wain. This will also count towards Kaavish technical talk requirement. The poster is attached.\nBest\,\nKaavish Team\n&nbsp\;
+SUMMARY:📢 Today's talk ' After the Algorithm' (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:6e7e7f12-1066-4cbf-b933-84cba34427d8@6e7e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/62857
+DTSTART:20260130T103000Z
+SUMMARY:📝 Lab 2 pdf (CE/EE 442L/426L-T1)
+UID:3f1e6322-a2a1-470c-9e16-2fa19756404a@3f1e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/63743
+DTSTART:20260222T185959Z
+SUMMARY:📝 A4: Agentic AI with Langchain (CS 435-L1)
+UID:8b52b517-f7c1-4fbd-8fc4-73ccff082064@8b52.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/assignments/63518
+DTSTART:20260212T044500Z
+SUMMARY:📝 Crypto Graphy Quiz (CS 382-L1)
+UID:89727610-e105-4ca8-b2a7-c675047e4d36@8972.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/63790
+DTSTART:20260220T103000Z
+SUMMARY:📝 Lab 5 pkt files (CE/EE 442L/426L-T1)
+UID:a205c658-5e2c-4ac7-b17e-7770dc4bae5b@a205.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62135
+DTSTART:20260518T185959Z
+SUMMARY:📝 Project Fair (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:d5f8b44b-72ba-4d12-911b-f29b844234dd@d5f8.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260214
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/discussion_topics/62619\n\nAssignments are provided. One is graded\, and another non-graded.
+SUMMARY:📢 Assignment 1 is  provided. One is graded\, and another non-graded. (CS 382-L1)
+UID:2be4f9da-57f0-4256-ab88-f7ca0db58ebc@2be4.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260124
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/61903\n\nHi all\,\nI have uploaded the slides for the last lecture\, along with the Python code and diagram of the network we trained. I will also be uploading the first assignment in the next few days. I advise you to please activate your Piazza accounts if you haven't done so already. I have resent the activation emails.\nBest\,Usama
+SUMMARY:📢 Slides + Piazza (CS/CE 335/466-L2)
+UID:eb0ba7d6-8825-4fd0-9cdd-e53534cd09f3@eb0b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5006/assignments/63043
+DTSTART:20260128T044500Z
+SUMMARY:📝 Quiz-1 (HS/LT/CM 216-S1)
+UID:ab66cf21-70c6-474c-aca7-3102543ad12f@ab66.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/assignments/63219
+DTSTART:20260215T185900Z
+SUMMARY:📝 Machine Problem 1 (CS/CE 335/466-L2)
+UID:a2da8af3-7691-494e-9cb7-d236106fd5d3@a2da.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260209
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/62395\n\n\nDear All\,\nThe following rubric will be used for mid-evaluations of your capstone projects:\n\n\n\nCategory\nMax Score\nAbove Average (8-10 for Design\, 16-20 for Demo\, etc.)\nAverage (6-8 for Design\, 12-16 for Demo\, etc.)\nBelow Average (0-6 for Design\, 0-12 for Demo\, etc.)\n\n\nProgress\n10\nThe Group has demonstrated strong progress by achieving most planned milestones for this stage. Work completed so far is coherent\, well-organized\, and clearly aligned with the project objectives. The team can clearly justify what has been implemented and why.\nThe Group has made reasonable progress and completed several milestones. However\, progress is uneven\, and some completed work appears ad hoc or insufficiently justified. There is partial clarity about what has been achieved and what remains.\nThe Group has shown limited progress\, with few meaningful milestones achieved. Work completed so far lacks direction or coherence\, and there is little clarity about current status or rationale behind the work done.\n\n\nWorking Demo\n20\nThe major functionalities have been completed. All components should be integrated and functional. The test plan has been created and executed.\nCore functionalities have been implemented\, but some may still have minor issues or require refinement. Most components are integrated\, but some may not work seamlessly together. A test plan has been created\, but execution is incomplete or reveals issues that remain unresolved.\nOnly partial implementation of core functionalities\, with major features missing or non-functional. Components are not fully integrated\, leading to significant gaps in functionality. A test plan is missing\, incomplete\, or has not been executed\, making it difficult to assess system performance.\n\n\nRemaining Work\n5\nThe team has shown excellent progress so far and has achieved many milestones. They are clear about the work yet to be completed and can comfortably complete it in time.\nThe team has shown good progress and achieved significant milestones. However\, much work remains\, and they need to pace up. Some components are still vague.\nThe team has not shown good progress. Most important milestones remain unachieved\, and there is no clarity about outstanding tasks\, making completion difficult.\n\n\nPresentation Skills\n7\nThe project is properly introduced. The content is well-organized and presented coherently in an interesting manner. Time was properly managed.\nThe project is properly introduced. The content is reasonably organized and presented coherently. Some information was missing or vague.\nThe project is poorly introduced. The content is disorganized with missing or vague key information.\n\n\nQ&amp\;A\n8\nGroup members were well prepared to answer the questions and showed good knowledge on the topics. They did not leave any room for ambiguity.\nGroup members were prepared to answer questions and showed basic knowledge on the topics. Some ambiguity remained.\nGroup members were not well-prepared to answer questions\, showed limited knowledge\, and left much room for ambiguity.\n\n\n\n
+SUMMARY:📢 Mid-Evaluation Rubric (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:d7d8930d-04c7-4f54-a8c2-0b6410c3a14c@d7d8.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=WE
+DTEND:20260211T061500Z
+DTSTART:20260211T050000Z
+SUMMARY:🏫 Class: CE/EE 442/426-L1
+UID:26a2d8e1-1b06-493d-a5f7-3a7def8edfb7@26a2.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260203
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/62217\n\nDear Class\,\nHere’s a quick recap of what we covered in Lecture #4 and what you need to do for the upcoming assignment.\nKey topics from yesterday\n1) Agentic AI: why it changes the risk picture\n\nWe discussed how agentic AI increases the attack surface compared to “classic” GenAI/chatbots because agents can take actions via tools (e.g.\, accessing files/drive\, sending emails/SMS\, making outbound calls\, running workflows\, etc.).\nThis means failures can move from “bad text output” to real-world actions taken on a user’s/organization’s behalf.\n\n2) Safety vs. Security (and how to tell the difference)\n\nSafety = preventing unintentional harm (intent/behavior control).\n\nExamples in agentic AI: misaligned goals\, runaway actions\, unintended harmful outcomes.\nControls: alignment\, guardrails\, constraints\, stop conditions\, human-in-the-loop.\n\nSecurity = defending against deliberate threats (access/abuse control).\n\nExamples in agentic AI: prompt injection\, account/tool hijacking\, data exfiltration\, abuse of permissions.\nControls: authentication/authorization\, sandboxing\, secrets isolation\, least privilege tools.\n\nWe also highlighted that bias is primarily a safety concern (intrinsic to the system’s behavior)\, even though safety/security can sometimes overlap.\n\n3) Industry frameworks you should know (and use as checklists)\nWe reviewed three key references you’ll use to reason about and test systems:\n\nOWASP Top 10 (Web App Security) — common web application risks like injection\, misconfigurations\, broken access control\, etc.\nOWASP Top 10 (LLM Applications) — LLM-specific risks like prompt injection\, sensitive info disclosure\, excessive agency\, training data poisoning\, etc.\nMITRE ATLAS / ATLAS Matrix — a threat matrix/framework for AI/ML systems covering attacker behaviors (recon → access → execution → exfiltration → impact).\n\nWe also walked through examples like:\n\nTraining data poisoning (poisoned training or fine-tuning data impacting model behavior).\nA multi-turn jailbreak (“crescendo”) example to illustrate how prompt injection can gradually steer a model toward disallowed outputs.\n\n4) Hyperscalers &amp\; Responsible AI tooling (Azure / AWS / GCP)\nWe talked through how major cloud platforms provide built-in capabilities for:\n\ncontent safety filters\, prompt defense\, evaluations\, explainability\, monitoring\, and transparency\nred teaming (authorized “attack simulation” to test defenses)\n\nWe also mentioned major standards:\n\nNIST AI RMF\, ISO 42001\, and EU AI Act (noting the EU AI Act is enforceable law\, unlike most guidance/frameworks).\n\n&nbsp\;\nThe details for this week's assignment are available here: A3: LLM Security Helper App.\nLecture slides have been added to the week 4 module and the supplemental material for this week is available here: Readings &amp\; Supplemental Material.\nIf you have questions\, reach out to the course RAs&nbsp\;or message the instructor.\n&nbsp\;\nBest\,CS 435 Team
+SUMMARY:📢 Lecture 4 Recap (GenAI Security & Safety) + Assignment Demo Next Class (CS 435-L1)
+UID:6fa4d8f2-52f1-4ccb-9319-4df8b3eb7f87@6fa4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/63292
+DTSTART:20260211T185959Z
+SUMMARY:📝 Project Proposal (CS 435-L1)
+UID:3012f7bb-00e1-46c4-8ffa-126d4d9fd64f@3012.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/assignments/63798
+DTSTART:20260218T030000Z
+SUMMARY:📝 Create and Set Up Your GitHub Profile (Non Graded) (CS 382-L1)
+UID:33eb709a-63e3-413a-b0e7-304bb1b14b40@33eb.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62128
+DTSTART:20260126T185900Z
+SUMMARY:📝 02-Standup Meeting (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:aa2049dc-58a5-4156-90a4-7f6a40fd9ce5@aa20.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTEND:20260209T044500Z
+DTSTART:20260209T033000Z
+SUMMARY:🏫 Class: CS 492
+UID:0d4741dc-dfd5-4e80-b5b4-5ab104fb5c30@0d47.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260210
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/discussion_topics/62451\n\nToday's Slide is updated on Modules...
+SUMMARY:📢 Today's Slide is updated on Modules... (CS 382-L1)
+UID:15d0bb61-facc-4da8-9ae3-2919aad78ed7@15d0.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260116
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/61635\n\nDear All\,\nThe course syllabus has been published on SimpleSyllabus. As I mentioned during the first class that grading scheme was tentative\, there has been a change in the grading scheme. To this end\, I advise you to please review it.\nBest\,Usama
+SUMMARY:📢 Course Syllabus Available (CS/CE 335/466-L2)
+UID:0518892a-a88f-4597-88ed-680ff96f869b@0518.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/assignments/63125
+DTSTART:20260130T185959Z
+SUMMARY:📝 Class Activity 1 (CS/CE 335/466-L2)
+UID:fea69d7b-c458-40bf-8cb9-d3fb9faec77a@fea6.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4979/assignments/63131
+DTSTART:20260226T030000Z
+SUMMARY:📝 Secure Architecture and Design (CS 382-L1)
+UID:78e51d7f-6b5d-4866-bfba-0da0fc6962e3@78e5.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260131
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4852/discussion_topics/62155\n\nHi students\nPlease start work on HW1. Due date is Feb 7.&nbsp\;\nThe required ITU standard document needed for Question 1 can be found under the Standards Module on Main Page.&nbsp\;
+SUMMARY:📢 HW1 Uploaded to Assignments (CE/EE 442/426-L1)
+UID:00583e81-fc67-416b-96bc-a4755d5a682a@0058.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260204
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/62258\n\nHello everyone\,\nI’ll be in the Projects Lab during my Ehsas hour today (from 10:00 am to 11:00 am). Feel free to drop by or reach out to me on Teams if you need any help setting up the API for the assignment or if you need support with anything else in the course.\nRegards\,\nYour TA\,\nMuhammad Anas
+SUMMARY:📢 Ehsas Hour (CS 435-L1)
+UID:a2663622-baa6-488f-a67d-3e0ac3bb21f2@a266.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260123
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4852/discussion_topics/61878\n\nHi students\nhttps://cryptography101.ca/\nAt the above link\, you will find links to several cryptography related courses offered by Dr Alfred Menezes. This is a good resource for additional study as well as for term paper.
+SUMMARY:📢 A very good resource for additional study (CE/EE 442/426-L1)
+UID:32b77dbd-44b7-48cc-a69f-232ac0e3e5e0@32b7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62130
+DTSTART:20260420T185900Z
+SUMMARY:📝 05-Standup Meeting (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:427af496-39d8-41b0-8d31-3e106fff5ce3@427a.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/62988
+DTSTART:20260201T185959Z
+SUMMARY:📝 A2: Ethics of AI MOOC (CS 435-L1)
+UID:add2a0e1-105a-450d-b0ae-c9fd9bdaf623@add2.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=WE
+DTEND:20260211T091500Z
+DTSTART:20260211T080000Z
+SUMMARY:🏫 Class: CS/CE 335/466-L2
+UID:c0ff7a15-73d1-4f1c-a258-a1c6226e918a@c0ff.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260125
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/61912\n\nHello everyone\nI'll be your TA for CS 435- GenAI this semester. I hope you guys have a great time in the course.I'll be keeping my Ehsas Hours on Wednesdays 10:00-11:00hrs in the Projects Lab. Feel free to reach me out this time for course-related questions or guidance.\nApart from that\, feel free to drop me a message on teams if you need any help.\nRegards\,Muhammad Anas (ma08458)
+SUMMARY:📢 Announcement from your TA (CS 435-L1)
+UID:e995e066-043b-4f49-adf0-513a2a836f2f@e995.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260201
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/62168\n\nHi all\,\nI’ve uploaded the first programming assignment. This assignment wraps up the mathematical foundations of Large Language Models (LLMs). This assignment will be due February 15th at 11:59 PM (two weeks from now).\nThe assignments will be guided and relatively straightforward. That said\, I strongly recommend starting early. Fully understanding what’s being asked will take some time. Completing the assignments carefully will also prepare you well for the quizzes and the midterm.\nStarting this week\, we’ll focus exclusively on neural models for language modeling. From there\, we’ll gradually build toward sequence-to-sequence translation\, which will motivate our transition to Attention-based models.\nBest\,Usama
+SUMMARY:📢 Machine Problem 1 (CS/CE 335/466-L2)
+UID:0d601d0e-c6d7-44b9-8e85-70079df62062@0d60.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260209
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/62433\n\nHi all\,\nI have published the grade for today's quiz. The solutions are uploaded under the Files tab on Canvas. The mean is 7.41 and most of you have done well\, showing good understanding of foundational concepts of Neural Networks/Deep Learning.\nIf you are struggling with these foundational concepts\, you are advised to visit me in my office hours later this week.\nUsama
+SUMMARY:📢 Quiz Graded (CS/CE 335/466-L2)
+UID:109c568b-83c5-41ac-99b1-db2511020f83@109c.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260121
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/61784\n\nHi all\,\nSlides for lecture 2 have been uploaded. In today's class I will demo a neural language model training using the JAX library.\nUsama
+SUMMARY:📢 Slides uploaded (CS/CE 335/466-L2)
+UID:511e588b-3681-4521-bb1b-89c70c47d414@511e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62127
+DTSTART:20260413T185959Z
+SUMMARY:📝 Final Report (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:0526afaa-578e-47fe-99f4-43c0a714e697@0526.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260126
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/61937\n\nDear Kaavish Students\,\nCareer City 2026 is being held on 29th January from 10-5 pm and will be featuring 100+ organization\, mentorship on a first come first served basis with senior leaders in the industry\, a chance to get your LinkedIn photo taken and engage more deeply through the industry showcasing area where organizations will be showing their product demos and offerings. Come prepared with your resume and elevator pitch and in case you need help\, you can come to the career city orientation tomorrow at 1pm in Tariq Rafi.Pls download hive to ensure your attendance is marked as this event is mandatory for juniors and seniors.\nSee you all!\nOffice of Career Services
+SUMMARY:📢 Career City 2026 - On Jan 29 (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:6194c93b-4847-4e0d-8867-c5ad61c725cb@6194.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/63160
+DTSTART:20260206T103000Z
+SUMMARY:📝 Lab 3 PKA File Submission (CE/EE 442L/426L-T1)
+UID:7e528f58-1ffc-436f-85af-d1998d1153b8@7e52.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/63159
+DTSTART:20260206T103000Z
+SUMMARY:📝 lab 3 pdf (CE/EE 442L/426L-T1)
+UID:cd33e8c3-e6fa-4337-998e-19ff12d06cbd@cd33.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260204
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5111/discussion_topics/62289\n\nDear all\,\nI am planning Quiz 1 on Monday. I have just uploaded combined slides for lectures 4-6 (i.e. Monday January 26th - Monday February 2nd). These include concepts which were covered as Python demos.\nAll the concepts you will be tested on are in the slides for Lectures 1 through 6.\nI will also upload slides for today's session (Lecture 7)\, although it will not be tested in the quiz. More precisely\, today's session was a review session\, however\, we did go over the LSTM\, and what extra abilities it has\, over regular RNNs.\nOf the topics we have covered previously\, backpropagation and regularization will not be tested in the quiz.\nBest\,Usama
+SUMMARY:📢 Slides uploaded + Quiz 1 (CS/CE 335/466-L2)
+UID:76b54b2a-df69-4884-8830-0ac1abd16aa6@76b5.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260204
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4852/discussion_topics/62268\n\nHi students\nWe will have our first quiz on Feb 11 during the class\, The duration of the Quiz will be only 25 minutes. Following chapters will be included:\nChapter 1 (attack types\, services\, mechanisms\, access control)\nChapter 2 (Number Theory questions)\nChapter 3 (traditional cryptography using substitution and transposition)\nI have also uploaded some practice questions from chapter 3 and their solution.
+SUMMARY:📢 Quiz1 on Wednesday Feb11 (CE/EE 442/426-L1)
+UID:c3d22ec4-e040-4ba0-b3e0-ff074b9da205@c3d2.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=TH
+DTEND:20260212T044500Z
+DTSTART:20260212T033000Z
+SUMMARY:🏫 Class: CS 382-L1
+UID:3008bfa2-ace0-4afb-9df8-b7aace387449@3008.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=FR
+DTEND:20260213T044500Z
+DTSTART:20260213T033000Z
+SUMMARY:🏫 Class: HS/LT/CM 216-S1
+UID:2f47a92f-dd8c-4b01-8ea8-afa97d9e8bf7@2f47.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTEND:20260209T061500Z
+DTSTART:20260209T050000Z
+SUMMARY:🏫 Class: CE/EE 442/426-L1
+UID:23c7c4af-3815-4613-b7f6-4c1c28aa9c15@23c7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62137
+DTSTART:20260427T185900Z
+SUMMARY:📝 Professional Visit 2 (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:5c16e5a3-bc22-418f-9d07-383ea42c8a26@5c16.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=FR
+DTEND:20260213T133000Z
+DTSTART:20260213T103000Z
+SUMMARY:🏫 Class: CE/EE 442L/426L-T1
+UID:733be01e-b83d-4cf2-b07d-b43b9ada2e20@733b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4855/assignments/63379
+DTSTART:20260213T103000Z
+SUMMARY:📝 Lab 4 pkt file  (CE/EE 442L/426L-T1)
+UID:2c448ef7-cd47-439d-9d38-625d6e97e682@2c44.org
+END:VEVENT
+BEGIN:VEVENT
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTEND:20260209T133000Z
+DTSTART:20260209T110000Z
+SUMMARY:🏫 Class: CS 435-L1
+UID:0029d47c-4120-4027-9013-effc3b03a8e4@0029.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260119
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/61677\n\nDear Kaavish Students (C6)\,\nHere is the link to the Kaavish-II live syllabus.\nCS491-CS492 - Kaavish - Live Syllabus - 2025/2026 - Google Drive Links to an external site.\nAs per the live syllabus\, we will have standup meetings in next week class (on 26th Jan 2026).\nSee you all!
+SUMMARY:📢 Kaavish II Syllabus (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:ddb7107e-057b-4897-b58b-af6e4e7d8f84@ddb7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/62729
+DTSTART:20260125T185959Z
+SUMMARY:📝 A1: Counting Tokens using Tiktokenizer (CS 435-L1)
+UID:d658f9f7-7c8e-47f1-8117-68e9650c4789@d658.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260214
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/discussion_topics/62622\n\nHi All:\nWe will hold a combined session on Monday\, 16th February\, at 8:30 AM in the IDEAL Common. Kindly ensure you arrive before 8:30 AM\nRegards\,\nKaavish Team
+SUMMARY:📢 Combined session (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:5b7cab8f-13a9-4cc2-aa8a-c10ec152b019@5b7c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62134
+DTSTART:20260427T185959Z
+SUMMARY:📝 Poster Submission (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:f280bb4b-a057-4a07-ab82-e680432d604d@f280.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/assignments/62565
+DTSTART:20260119T120000Z
+SUMMARY:📝 Quiz 1 (CS 435-L1)
+UID:52bd530b-76f8-4d05-903b-cecad92266ca@52bd.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260208
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/62376\n\nDear Class\,\nWe want to share an important update regarding class participation and attendance expectations for this course.\nOver the past few sessions\, inconsistent attendance and limited responsiveness during live classes has been observed. This course is designed to be highly interactive\, discussion-driven\, and participatory. Active engagement is not optional—it is a core part of the learning experience and essential to achieving the course outcomes.\nEffective immediately\, camera-on participation during live class sessions will be required.Students who attend with cameras off will be marked absent\, except in cases of documented or pre-approved exceptions.\nThis policy is being introduced to:\n* Ensure meaningful engagement and accountability* Support interactive discussions\, cold-calling\, and real-time feedback* Maintain fairness and consistency across the class\nI recognize that genuine constraints can arise. If you have a legitimate reason (technical\, medical\, or personal) that prevents camera-on participation\, please discuss it with me directly in advance\, and we will handle it reasonably on a case-by-case basis.\nWhile this expectation would ideally have been stated in the syllabus upfront\, it is still well within instructional norms\, and it aligns with the collaborative\, discussion-oriented nature of this course.\nI appreciate your cooperation and professionalism as we move forward. My goal is to ensure a high-quality learning environment where everyone benefits fully from the experience.\nBest regards\,CS435 RAs\nOn behalf of Dr. Adnan Masood
+SUMMARY:📢 Class Participation Policy Update – Camera-On Requirement (CS 435-L1)
+UID:18a2c4d1-7d3a-4bda-a5ad-96399d9d231c@18a2.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260121
+DESCRIPTION:Link: https://hulms.instructure.com/courses/4981/discussion_topics/61780\n\nDear class\nQuick recap:\n1. Five Tribes of ML and why Generative AI ≠ predictive modeling for tasks like ranking and forecasting - &nbsp\;The concept of moat / USP in AI products (why “just an API + prompt” isn’t enough) - High-level LLM application stack (data pipelines\, vector DBs\, caching\, hosting)\n2. Dr. Abdella' Guest lecture on Transformers: tokenization\, embeddings\, attention\, masking\, and encoder–decoder architecture&nbsp\;\nQuiz update: The next class quiz will be based on BOTH my lecture and the guest lecture. Please re-watch the full lecture recording and review the Transformer concepts carefully.\nAssignment 1 — Token Counter Tool:\nBuild a tool that takes input text + a selected LLM model (any 3 models) and outputs the token count.CLI/terminal-based is fine (UI optional).Submit as a PUBLIC GitHub repository with a clear README.Due: Sunday night 1/25 - 11:59pm (before next class).\nThanks\,Adnan
+SUMMARY:📢 Lecture Recap\, Quiz Update\, and Assignment 1 (CS 435-L1)
+UID:c0b7f82f-db0b-4d89-8ead-1e551365dffa@c0b7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62139
+DTSTART:20260303T185900Z
+SUMMARY:📝 02-Progress Update (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:3a4b456a-2931-4ad0-8028-f2b3e7f9ae60@3a4b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62126
+DTSTART:20260119T185959Z
+SUMMARY:📝 01-Standup Meeting (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:9336772f-f342-431d-969c-d1d9d3ebb704@9336.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62132
+DTSTART:20260309T185900Z
+SUMMARY:📝 03-Standup Meeting (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:3768029d-a0d7-4ab0-ae2d-fbedbea546c3@3768.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Link: https://hulms.instructure.com/courses/5040/assignments/62138
+DTSTART:20260202T185900Z
+SUMMARY:📝 01-Progress Update (CS 492-C1\,C2\,C3\,C4\,C5\,C6)
+UID:bebd3fae-d998-47d0-8242-dfc64511eefc@bebd.org
+END:VEVENT
+END:VCALENDAR
